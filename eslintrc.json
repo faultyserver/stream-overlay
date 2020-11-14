@@ -1,0 +1,67 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "@typescript-eslint",
+    "standard",
+    "promise",
+    "import",
+    "react",
+    "react-hooks",
+    "prettier"
+  ],
+  "extends": [
+    "standard",
+    "standard-jsx",
+    "prettier",
+    "prettier/react",
+    "prettier/standard"
+  ],
+  "env": {
+    "es6": true,
+    "browser": true
+  },
+  "settings": {
+    "react": {
+      "pragma": "h"
+    }
+  },
+  "ignorePatterns": ["node_modules/", "public/"],
+  "rules": {
+    "camelcase": ["error", { "allow": ["^_"] }],
+    "no-labels": ["error", { "allowLoop": true }],
+    // TypeScript-replaced rules
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      { "argsIgnorePattern": "^_" }
+    ],
+    "no-unused-expressions": "off",
+    "@typescript-eslint/no-unused-expressions": [
+      "error",
+      {
+        "allowShortCircuit": true,
+        "allowTernary": true,
+        "allowTaggedTemplates": true
+      }
+    ],
+    "no-use-before-define": "off",
+    "@typescript-eslint/no-use-before-define": [
+      "warn",
+      {
+        "variables": true,
+        "classes": true,
+        "functions": false,
+        "typedefs": false
+      }
+    ],
+    "no-useless-constructor": "off",
+    "@typescript-eslint/no-useless-constructor": "error",
+
+    // TypeScript handles these errors
+    "no-dupe-class-members": "off",
+    "no-undef": "off",
+    "import/default": "off",
+    "import/export": "off",
+    "import/named": "off"
+  }
+}

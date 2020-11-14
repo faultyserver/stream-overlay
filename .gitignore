@@ -1,0 +1,11 @@
+config/*.json
+!config/*.example.json
+node_modules/
+
+public/
+build/
+dist/
+
+.DS_Store
+
+*.log

@@ -1,0 +1,6 @@
+{
+  "private": {
+    "HOST": "localhost",
+    "PORT": 8080
+  }
+}
