@@ -1,4 +1,5 @@
 {
+  "TWITCH_CHAT_CHANNELS": ["gamesdonequick", "esamarathon"],
   "private": {
     "HOST": "localhost",
     "PORT": 8080

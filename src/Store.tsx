@@ -4,7 +4,7 @@ import { useSelector, TypedUseSelectorHook } from "react-redux";
 
 const composeEnhancers = (window as any).__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
-export const combinedReducer = combineReducers({});
+export const combinedReducer = combineReducers({ hello: () => ({}) });
 export const store = createStore(combinedReducer, composeEnhancers(applyMiddleware(thunk)));
 
 export type StoreState = ReturnType<typeof combinedReducer>;

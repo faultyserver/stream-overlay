@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  align-items: center;
+  min-width: 480px;
+}
+
+.artwork {
+  flex: 0 0 72px;
+  margin-right: 16px;
+  width: 72px;
+  height: 72px;
+}
+
+.trackName {
+  font-size: 24px;
+  font-weight: 900;
+  margin-bottom: 8px;
+  line-height: 1;
+}
+
+.artistName {
+  font-size: 20px;
+  color: #555;
+  line-height: 1;
+}
