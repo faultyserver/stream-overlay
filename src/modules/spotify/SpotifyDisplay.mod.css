@@ -1,4 +1,9 @@
+.positioner {
+  position: relative;
+}
+
 .container {
+  position: absolute;
   display: flex;
   align-items: center;
   min-width: 480px;
